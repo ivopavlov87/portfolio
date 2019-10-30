@@ -699,7 +699,7 @@ input, select, textarea {
 			flex-direction: row;
 			margin: 2.5rem 0;
 			width: 25%;
-			height: 200px;
+			height: 160px;
 		}
 
 			.image.main img {
