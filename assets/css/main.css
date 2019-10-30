@@ -696,8 +696,10 @@ input, select, textarea {
 
 		.image.main {
 			display: flex;
+			flex-direction: row;
 			margin: 2.5rem 0;
 			width: 25%;
+			height: 200px;
 		}
 
 			.image.main img {
@@ -705,7 +707,7 @@ input, select, textarea {
 			}
 
 		.image.profile {
-			display: flex;
+			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
 		}
