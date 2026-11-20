@@ -1717,6 +1717,41 @@ input, select, textarea {
     margin-bottom: 0;
 }
 
+#projects .project-demo {
+    margin-top: 1.5rem;
+}
+
+#projects .project-demo summary {
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#projects .project-demo summary:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+#projects .project-demo-hint {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#projects .project-demo iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    aspect-ratio: 16 / 9;
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 4px;
+}
+
 /* Skills technology logos */
 #skills .technology-grid {
     display: grid;
