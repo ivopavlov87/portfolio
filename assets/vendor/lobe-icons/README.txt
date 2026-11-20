@@ -5,3 +5,4 @@ https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/
 https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/claude-color.svg
 https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/devin.svg
 https://raw.githubusercontent.com/lobehub/lobe-icons/master/LICENSE
+https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/githubcopilot.svg
