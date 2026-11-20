@@ -1754,6 +1754,24 @@ input, select, textarea {
     font-weight: 600;
 }
 
+#skills .technology-grid .ai-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    width: 100%;
+    max-width: 7rem;
+    height: 4rem;
+}
+
+#skills .technology-grid .ai-logos img {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 0;
+    max-width: 2rem;
+    height: 2rem;
+}
+
 @media screen and (max-width: 480px) {
     #skills .technology-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
