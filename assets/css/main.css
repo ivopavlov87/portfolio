@@ -1716,3 +1716,52 @@ input, select, textarea {
 #projects .project p:last-child {
     margin-bottom: 0;
 }
+
+/* Skills technology logos */
+#skills .technology-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+#skills .technology-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.35rem;
+    background: #ffffff;
+    color: #202430;
+    text-align: center;
+}
+
+#skills .technology-grid img {
+    display: block;
+    width: 100%;
+    max-width: 5rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+#skills .technology-grid span {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    #skills .technology-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #skills .technology-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
