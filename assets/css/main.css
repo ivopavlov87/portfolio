@@ -1719,13 +1719,13 @@ input, select, textarea {
 
 #projects .project-demo {
     margin-top: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
 }
 
 #projects .project-demo summary {
     cursor: pointer;
     padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
     font-weight: 600;
 }
 
@@ -1741,13 +1741,16 @@ input, select, textarea {
     font-weight: 300;
 }
 
+#projects .project-demo-content {
+    padding: 0 1rem 1rem;
+}
+
 #projects .project-demo iframe {
     display: block;
     width: 100%;
     height: auto;
     min-height: 200px;
     aspect-ratio: 16 / 9;
-    margin-top: 1rem;
     border: 0;
     border-radius: 4px;
 }
