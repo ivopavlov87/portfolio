@@ -1681,3 +1681,38 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Projects */
+#projects {
+    font-size: max(1rem, 16px);
+}
+
+#projects .project {
+    display: flow-root;
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#projects .project:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
+#projects .project-preview {
+    float: right;
+    width: 6rem;
+    max-width: 30%;
+    height: auto;
+    margin: 0 0 1rem 1.5rem;
+    border-radius: 4px;
+}
+
+#projects .project-status {
+    margin-bottom: 1rem;
+}
+
+#projects .project p:last-child {
+    margin-bottom: 0;
+}
