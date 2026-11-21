@@ -1,0 +1,72 @@
+/* Projects */
+#projects {
+    font-size: max(1rem, 16px);
+}
+
+#projects .project {
+    display: flow-root;
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#projects .project:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
+#projects .project-preview {
+    float: right;
+    width: 6rem;
+    max-width: 30%;
+    height: auto;
+    margin: 0 0 1rem 1.5rem;
+    border-radius: 4px;
+}
+
+#projects .project-status {
+    margin-bottom: 1rem;
+}
+
+#projects .project p:last-child {
+    margin-bottom: 0;
+}
+
+#projects .project-demo {
+    margin-top: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+#projects .project-demo summary {
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#projects .project-demo summary:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+#projects .project-demo-hint {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#projects .project-demo-content {
+    padding: 0 1rem 1rem;
+}
+
+#projects .project-demo iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 4px;
+}
