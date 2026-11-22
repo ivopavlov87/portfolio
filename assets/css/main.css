@@ -647,7 +647,7 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
+			background-image: url("../../images/backgrounds/overlay.png");
 			/* background-color: rgba(19, 21, 25, 0.5); */
 			border-radius: 4px;
 			content: '';
@@ -1161,7 +1161,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/backgrounds/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1180,7 +1180,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/backgrounds/bg.webp");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1698,6 +1698,38 @@ input, select, textarea {
     font-size: max(1rem, 16px);
 }
 
+#projects [hidden] {
+    display: none !important;
+}
+
+#projects .project-tabs {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+#projects .project-tabs button {
+    flex: 1;
+    height: auto;
+    min-height: 3rem;
+    padding: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    white-space: normal;
+}
+
+#projects .project-tabs button[aria-selected="true"] {
+    background: #ffffff;
+    color: #1b1f22 !important;
+    box-shadow: none;
+}
+
+#projects .project-category:focus-visible,
+#projects button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
 #projects .project {
     display: flow-root;
     margin: 2rem 0;
@@ -1764,6 +1796,70 @@ input, select, textarea {
     aspect-ratio: 16 / 9;
     border: 0;
     border-radius: 4px;
+}
+
+#projects .project-carousel {
+    width: 100%;
+    max-width: 26rem;
+    margin: 1.5rem auto 0;
+}
+
+#projects .project-carousel-slides img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#projects .project-carousel.is-enhanced .project-carousel-slides {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#projects .project-carousel.is-enhanced .project-carousel-slides img {
+    grid-area: 1 / 1;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1.75s ease-in-out;
+}
+
+#projects .project-carousel.is-enhanced .project-carousel-slides img.is-active {
+    opacity: 1;
+}
+
+#projects .project-carousel-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+#projects .project-carousel-controls button {
+    padding: 0 0.75rem;
+    font-size: 14px;
+    letter-spacing: 0.025rem;
+}
+
+#projects .project-carousel-status {
+    min-width: 3rem;
+    font-size: 14px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #projects .project-carousel.is-enhanced .project-carousel-slides img {
+        transition: none;
+    }
 }
 
 /* Skills technology logos */

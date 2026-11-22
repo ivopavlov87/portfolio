@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=image-optimization" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -21,7 +21,7 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<img src="images/ruby_core.png" alt="Ruby core gem" />
+							<img src="images/branding/ruby_core.webp" alt="Ruby core gem" />
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -57,7 +57,7 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image profile">
-									<img src="images/profile.jpeg" alt="" />
+									<img src="images/about/profile.webp" alt="" />
 								</span>
 								<p>
 									Hi, I'm Ivo Pavlov, a software engineer based near Seattle, Washington. My curiosity about how things work
@@ -82,7 +82,7 @@
 							<article id="puppy">
 								<h2 class="major">You found Max!</h2>
 								<span class="image profile">
-									<img src="images/puppy.jpeg" alt="" />
+									<img src="images/about/puppy.webp" alt="" />
 								</span>
 								<p>
 									<a href="#intro">Go back to intro.</a>
@@ -94,10 +94,10 @@
 							<article id="printing">
 								<h2 class="major">3D Printing</h2>
 								<span class="image profile">
-									<img src="images/3d_printing.jpeg" alt="3D-printed project parts laid out on a table for assembly" />
+									<img src="images/projects/3d-printing/puzzle-boxes/puzzle_box_1.webp" alt="3D-printed project parts laid out on a table for assembly" />
 								</span>
 								<p>
-									One of my 3D printing projects, with its parts laid out for assembly.<br />
+									One of my <a href="#projects/3d-printing">3D printing projects</a>, with its parts laid out for assembly.<br />
 									<a href="#intro">Go back to intro.</a>
 								</p>
 							</article>
@@ -107,7 +107,7 @@
 							<article id="pilchuck">
 								<h2 class="major">Mt. Pilchuck</h2>
 								<span class="image profile">
-									<img src="images/pilchuck.jpeg" alt="" />
+									<img src="images/about/pilchuck.webp" alt="" />
 								</span>
 								<p>
 									One of my favorite hiking trails; the Mount Pilchuck Fire Lookout hike.<br />
@@ -120,7 +120,7 @@
 							<article id="boardgame">
 								<h2 class="major">Board Game Night</h2>
 								<span class="image profile">
-									<img src="images/boardgame.jpeg" alt="" />
+									<img src="images/about/boardgame.webp" alt="" />
 								</span>
 								<p>
 									Galactic conquest is never a simple matter, but always a fun way to spend the weekend.<br />
@@ -138,7 +138,7 @@
 								</p>
 								<ul class="technology-grid" aria-label="Selected technologies">
 									<li>
-										<img src="images/Ruby_on_Rails.png" alt="" width="80" height="64" decoding="async" />
+										<img src="images/technologies/Ruby_on_Rails.webp" alt="" width="80" height="64" decoding="async" />
 										<span>Ruby on Rails</span>
 									</li>
 									<li>
@@ -150,11 +150,11 @@
 										<span>TypeScript</span>
 									</li>
 									<li>
-										<img src="images/JavaScript-logo.png" alt="" width="80" height="64" decoding="async" />
+										<img src="images/technologies/JavaScript-logo.webp" alt="" width="80" height="64" decoding="async" />
 										<span>JavaScript</span>
 									</li>
 									<li>
-										<img src="images/postgresql.png" alt="" width="80" height="64" decoding="async" />
+										<img src="images/technologies/postgresql.webp" alt="" width="80" height="64" decoding="async" />
 										<span>PostgreSQL</span>
 									</li>
 									<li>
@@ -167,7 +167,7 @@
 										<span>AI</span>
 									</li>
 									<li>
-										<img src="images/aws-logo.png" alt="" width="80" height="64" decoding="async" />
+										<img src="images/technologies/aws-logo.webp" alt="" width="80" height="64" decoding="async" />
 										<span>AWS</span>
 									</li>
 									<li>
@@ -179,7 +179,7 @@
 										<span>Redis</span>
 									</li>
 									<li>
-										<img src="images/node-js.png" alt="" width="80" height="64" decoding="async" />
+										<img src="images/technologies/node-js.webp" alt="" width="80" height="64" decoding="async" />
 										<span>Node.js</span>
 									</li>
 									<li>
@@ -220,60 +220,119 @@
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
-								<p>Current work and legacy projects spanning mobile apps, full-stack web development, and browser games.</p>
-								<section class="project" aria-labelledby="kings-line-title">
-									<img class="project-preview" src="images/kl_landing.jpeg" alt="King's Line artwork showing two kings facing off over a game board" loading="lazy" />
-									<h3 id="kings-line-title">King's Line</h3>
-									<p class="project-status"><strong>In development</strong></p>
-									<p>A two-player, real-time card and board game with a Ruby on Rails API and a React Native client for iOS and Android.</p>
-									<ul>
-										<li>Live lobbies, player challenges, synchronized game state, and reconnect recovery.</li>
-										<li>Server-side rules and scoring, with database locking for turn actions.</li>
-										<li>Typed API services, secure mobile sessions, accessible game controls, and RSpec and Jest coverage.</li>
-										<li>AI was used to assist in development, and art assets used during development are AI-generated.</li>
-									</ul>
-									<p><strong>Technologies:</strong> Ruby on Rails, React Native, TypeScript, PostgreSQL, Redis, ActionCable, Sidekiq, RSpec, and Jest.</p>
-									<details class="project-demo" id="kings-line-demo">
-										<summary>Watch King's Line demo<span class="project-demo-hint">Opens here without leaving this page.</span></summary>
-										<div class="project-demo-content">
-											<iframe data-src="https://www.youtube-nocookie.com/embed/QR_2LFdWFPE?playsinline=1&amp;rel=0" title="King's Line gameplay demo" width="560" height="315" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+								<div class="project-tabs" role="tablist" aria-label="Project categories" hidden>
+									<button type="button" id="coding-tab" role="tab" aria-selected="true" aria-controls="coding-projects">Coding</button>
+									<button type="button" id="printing-tab" role="tab" aria-selected="false" aria-controls="printing-projects" tabindex="-1">3D Printing</button>
+								</div>
+								<div id="coding-projects" class="project-category" role="tabpanel" aria-labelledby="coding-tab" tabindex="0">
+									<p>Current work and legacy projects spanning mobile apps, full-stack web development, and browser games.</p>
+									<section class="project" aria-labelledby="kings-line-title">
+										<img class="project-preview" src="images/projects/coding/kl_landing.webp" alt="King's Line artwork showing two kings facing off over a game board" loading="lazy" />
+										<h3 id="kings-line-title">King's Line</h3>
+										<p class="project-status"><strong>In development</strong></p>
+										<p>A two-player, real-time card and board game with a Ruby on Rails API and a React Native client for iOS and Android.</p>
+										<ul>
+											<li>Live lobbies, player challenges, synchronized game state, and reconnect recovery.</li>
+											<li>Server-side rules and scoring, with database locking for turn actions.</li>
+											<li>Typed API services, secure mobile sessions, accessible game controls, and RSpec and Jest coverage.</li>
+											<li>AI was used to assist in development, and art assets used during development are AI-generated.</li>
+										</ul>
+										<p><strong>Technologies:</strong> Ruby on Rails, React Native, TypeScript, PostgreSQL, Redis, ActionCable, Sidekiq, RSpec, and Jest.</p>
+										<details class="project-demo" id="kings-line-demo">
+											<summary>Watch King's Line demo<span class="project-demo-hint">Opens here without leaving this page.</span></summary>
+											<div class="project-demo-content">
+												<iframe data-src="https://www.youtube-nocookie.com/embed/QR_2LFdWFPE?playsinline=1&amp;rel=0" title="King's Line gameplay demo" width="560" height="315" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+											</div>
+										</details>
+									</section>
+									<section class="project" aria-labelledby="jonkeysong-title">
+										<img class="project-preview" src="images/projects/coding/jonkey-song.webp" alt="JonkeySong game preview" loading="lazy" />
+										<h3 id="jonkeysong-title">JonkeySong</h3>
+										<p class="project-status"><strong>Playable demo</strong></p>
+										<p>A browser-based JavaScript implementation of the arcade classic Donkey Kong, rendered with Canvas.</p>
+										<p><strong>Technologies:</strong> JavaScript, Canvas, HTML, and CSS.</p>
+										<p><a href="https://ivopavlov87.github.io/jonkeysong/" target="_blank" rel="noopener">Play JonkeySong (opens in a new tab)</a> &middot; <a href="https://github.com/ivopavlov87/jonkeysong">JonkeySong source code</a></p>
+									</section>
+									<h3>Legacy projects</h3>
+									<p>Picto-gram, zBay, and Yipp are retired and no longer deployed. Their source code remains available.</p>
+									<section class="project" aria-labelledby="pictogram-title">
+										<img class="project-preview" src="images/projects/coding/pictogram.webp" alt="Picto-gram project preview" loading="lazy" />
+										<h3 id="pictogram-title">Picto-gram</h3>
+										<p class="project-status"><strong>Legacy / Retired</strong></p>
+										<p>An Instagram-inspired photo-sharing app where users can upload images, browse posts, and leave comments.</p>
+										<p><strong>Technologies:</strong> Ruby on Rails, PostgreSQL, React, Redux, AWS S3, and Docker.</p>
+										<p><a href="https://github.com/ivopavlov87/Fullstack1">Picto-gram source code</a></p>
+									</section>
+									<section class="project" aria-labelledby="zbay-title">
+										<img class="project-preview" src="images/projects/coding/zbay1.webp" alt="zBay project preview" loading="lazy" />
+										<h3 id="zbay-title">zBay</h3>
+										<p class="project-status"><strong>Legacy / Retired</strong></p>
+										<p>A collaborative real-estate auction app combining eBay-style bidding with Zillow-inspired property listings.</p>
+										<p><strong>Technologies:</strong> React, Node.js, MongoDB, Express, GraphQL, Apollo, Mapbox, and Cloudinary.</p>
+										<p><a href="https://github.com/ivopavlov87/zBay">zBay source code</a></p>
+									</section>
+									<section class="project" aria-labelledby="yipp-title">
+										<img class="project-preview" src="images/projects/coding/yipp.webp" alt="Yipp project preview" loading="lazy" />
+										<h3 id="yipp-title">Yipp</h3>
+										<p class="project-status"><strong>Legacy / Retired</strong></p>
+										<p>A Yelp-inspired app for dog owners to share reviews and ratings based on their dogs' social interactions.</p>
+										<p><strong>Technologies:</strong> MongoDB, Express, React, Redux, and Node.js.</p>
+										<p><a href="https://github.com/ivopavlov87/yipp">Yipp source code</a></p>
+									</section>
+								</div>
+								<div id="printing-projects" class="project-category" role="tabpanel" aria-labelledby="printing-tab" tabindex="0">
+									<section class="project" aria-labelledby="master-sword-title">
+										<h3 id="master-sword-title">Master Sword (Legend of Zelda: Breath of the Wild) and Jack Skellington Mask</h3>
+										<p>I 3D printed a replica of the Master Sword from Nintendo's <em>The Legend of Zelda: Breath of the Wild</em> and fitted it with toy lightsaber electronics for the glow, motion detection, and sound. I started with the instructions <a href="https://makerworld.com/en/models/887552-lightening-zelda-master-sword-100cm?from=search#profileId-843153" target="_blank" rel="noopener noreferrer">here</a>, then took some creative liberties and extended the design to make a longer sword.</p>
+										<p>In the video, I'm also wearing a 3D printed Jack Skellington mask from <em>The Nightmare Before Christmas</em> that I made for Halloween. The full-head mask has 3D printed mesh eyes that are easy to see through. The mask files are available <a href="https://makerworld.com/en/models/122261-jack-skellington-full-head-mask-w-magnet-latch" target="_blank" rel="noopener noreferrer">here</a>.</p>
+										<details class="project-demo" id="master-sword-demo">
+											<summary>Watch Master Sword and Jack Skellington Mask video<span class="project-demo-hint">Opens here without leaving this page.</span></summary>
+											<div class="project-demo-content">
+												<iframe data-src="https://www.youtube-nocookie.com/embed/NOsYu2Qd9Bk?playsinline=1&amp;rel=0" title="Master Sword and Jack Skellington Mask video" width="560" height="315" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+											</div>
+										</details>
+									</section>
+									<section class="project" aria-labelledby="dnd-boxes-title">
+										<h3 id="dnd-boxes-title">Dungeons &amp; Dragons Character Sheet Boxes</h3>
+										<p>I made these 3D printed boxes as gifts for friends who enjoy Dungeons &amp; Dragons. Each box doubles as a character sheet for their D&amp;D 5e pencil-and-paper adventures. Source files <a href="https://makerworld.com/en/models/1567056-chest-of-superior-tracking-dwarven-theme?from=search#profileId-1647534" target="_blank" rel="noopener noreferrer">here</a>.</p>
+										<div class="project-carousel" role="region" aria-roledescription="carousel" aria-label="Dungeons &amp; Dragons character sheet boxes">
+											<div class="project-carousel-slides">
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_1.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 1 of 7" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_2.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 2 of 7" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_3.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 3 of 7" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_4.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 4 of 7" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_5.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 5 of 7" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_6.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 6 of 7" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/dnd-boxes/dnd_box_7.webp" alt="Dungeons &amp; Dragons character sheet boxes, photo 7 of 7" loading="lazy" decoding="async" />
+											</div>
+											<div class="project-carousel-controls" hidden>
+												<button type="button" data-carousel-action="previous" aria-label="Previous photo in Dungeons &amp; Dragons character sheet boxes">Previous</button>
+												<button type="button" data-carousel-action="pause">Pause slideshow</button>
+												<button type="button" data-carousel-action="next" aria-label="Next photo in Dungeons &amp; Dragons character sheet boxes">Next</button>
+												<span class="project-carousel-status" aria-live="off">1 / 7</span>
+											</div>
 										</div>
-									</details>
-								</section>
-								<section class="project" aria-labelledby="jonkeysong-title">
-									<img class="project-preview" src="images/jonkey-song.png" alt="JonkeySong game preview" loading="lazy" />
-									<h3 id="jonkeysong-title">JonkeySong</h3>
-									<p class="project-status"><strong>Playable demo</strong></p>
-									<p>A browser-based JavaScript implementation of the arcade classic Donkey Kong, rendered with Canvas.</p>
-									<p><strong>Technologies:</strong> JavaScript, Canvas, HTML, and CSS.</p>
-									<p><a href="https://ivopavlov87.github.io/jonkeysong/" target="_blank" rel="noopener">Play JonkeySong (opens in a new tab)</a> &middot; <a href="https://github.com/ivopavlov87/jonkeysong">JonkeySong source code</a></p>
-								</section>
-								<h3>Legacy projects</h3>
-								<p>Picto-gram, zBay, and Yipp are retired and no longer deployed. Their source code remains available.</p>
-								<section class="project" aria-labelledby="pictogram-title">
-									<img class="project-preview" src="images/pictogram.png" alt="Picto-gram project preview" loading="lazy" />
-									<h3 id="pictogram-title">Picto-gram</h3>
-									<p class="project-status"><strong>Legacy / Retired</strong></p>
-									<p>An Instagram-inspired photo-sharing app where users can upload images, browse posts, and leave comments.</p>
-									<p><strong>Technologies:</strong> Ruby on Rails, PostgreSQL, React, Redux, AWS S3, and Docker.</p>
-									<p><a href="https://github.com/ivopavlov87/Fullstack1">Picto-gram source code</a></p>
-								</section>
-								<section class="project" aria-labelledby="zbay-title">
-									<img class="project-preview" src="images/zbay1.png" alt="zBay project preview" loading="lazy" />
-									<h3 id="zbay-title">zBay</h3>
-									<p class="project-status"><strong>Legacy / Retired</strong></p>
-									<p>A collaborative real-estate auction app combining eBay-style bidding with Zillow-inspired property listings.</p>
-									<p><strong>Technologies:</strong> React, Node.js, MongoDB, Express, GraphQL, Apollo, Mapbox, and Cloudinary.</p>
-									<p><a href="https://github.com/ivopavlov87/zBay">zBay source code</a></p>
-								</section>
-								<section class="project" aria-labelledby="yipp-title">
-									<img class="project-preview" src="images/yipp.png" alt="Yipp project preview" loading="lazy" />
-									<h3 id="yipp-title">Yipp</h3>
-									<p class="project-status"><strong>Legacy / Retired</strong></p>
-									<p>A Yelp-inspired app for dog owners to share reviews and ratings based on their dogs' social interactions.</p>
-									<p><strong>Technologies:</strong> MongoDB, Express, React, Redux, and Node.js.</p>
-									<p><a href="https://github.com/ivopavlov87/yipp">Yipp source code</a></p>
-								</section>
+									</section>
+									<section class="project" aria-labelledby="puzzle-boxes-title">
+										<h3 id="puzzle-boxes-title">Puzzle boxes</h3>
+										<p>I assembled these puzzle boxes as gifts and tucked extra goodies inside. Each box is a self-contained puzzle, with clues inscribed on the outside to help the recipient work out how to open it. Source files <a href="https://makerworld.com/en/models/967021-alchemist-s-cube-2-the-philosopher-s-key#profileId-938928" target="_blank" rel="noopener noreferrer">here</a>.</p>
+										<div class="project-carousel" role="region" aria-roledescription="carousel" aria-label="Puzzle boxes">
+											<div class="project-carousel-slides">
+												<img src="images/projects/3d-printing/puzzle-boxes/puzzle_box_1.webp" alt="Puzzle boxes, photo 1 of 5" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/puzzle-boxes/puzzle_box_2.webp" alt="Puzzle boxes, photo 2 of 5" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/puzzle-boxes/puzzle_box_3.webp" alt="Puzzle boxes, photo 3 of 5" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/puzzle-boxes/puzzle_box_4.webp" alt="Puzzle boxes, photo 4 of 5" loading="lazy" decoding="async" />
+												<img src="images/projects/3d-printing/puzzle-boxes/puzzle_box_5.webp" alt="Puzzle boxes, photo 5 of 5" loading="lazy" decoding="async" />
+											</div>
+											<div class="project-carousel-controls" hidden>
+												<button type="button" data-carousel-action="previous" aria-label="Previous photo in Puzzle boxes">Previous</button>
+												<button type="button" data-carousel-action="pause">Pause slideshow</button>
+												<button type="button" data-carousel-action="next" aria-label="Next photo in Puzzle boxes">Next</button>
+												<span class="project-carousel-status" aria-live="off">1 / 5</span>
+											</div>
+										</div>
+									</section>
+								</div>
 							</article>
 
 						<!-- Contact -->
@@ -581,8 +640,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/project-demo.js"></script>
+			<script src="assets/js/main.js?v=project-navigation"></script>
+			<script src="assets/js/project-demo.js?v=project-navigation"></script>
+			<script src="assets/js/projects.js?v=project-navigation"></script>
 
 	</body>
 </html>

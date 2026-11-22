@@ -335,6 +335,8 @@
 
 			$window.on('hashchange', function(event) {
 
+				var articleId = location.hash.substr(1).split('/')[0];
+
 				// Empty hash?
 					if (location.hash == ''
 					||	location.hash == '#') {
@@ -349,14 +351,14 @@
 					}
 
 				// Otherwise, check for a matching article.
-					else if ($main_articles.filter(location.hash).length > 0) {
+					else if ($main_articles.filter('#' + articleId).length > 0) {
 
 						// Prevent default.
 							event.preventDefault();
 							event.stopPropagation();
 
 						// Show article.
-							$main._show(location.hash.substr(1));
+							$main._show(articleId);
 
 					}
 
@@ -395,7 +397,7 @@
 				if (location.hash != ''
 				&&	location.hash != '#')
 					$window.on('load', function() {
-						$main._show(location.hash.substr(1), true);
+						$main._show(location.hash.substr(1).split('/')[0], true);
 					});
 
 })(jQuery);
